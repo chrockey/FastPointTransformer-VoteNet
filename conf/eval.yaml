@@ -1,0 +1,22 @@
+defaults: 
+  - visualization: eval
+
+num_workers: 0
+batch_size: 1
+cuda: 0
+weight_name: "latest" # Used during resume, select with model to load from [miou, macc, acc..., latest]
+enable_cudnn: True
+checkpoint_dir: "/root/code/fpt/thirdparty/torch_points3d/outputs/2021-10-02/09-52-25" # "{your_path}/outputs/2020-01-28/11-04-13" for example
+model_name: VoteNetMink
+precompute_multi_scale: True # Compute multiscate features on cpu for faster training / inference
+enable_dropout: False
+voting_runs: 1
+
+tracker_options: # Extra options for the tracker
+  full_res: False
+  make_submission: True
+  track_boxes: True
+
+hydra:
+  run:
+    dir: ${checkpoint_dir}/eval/${now:%Y-%m-%d_%H-%M-%S}
