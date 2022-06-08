@@ -46,7 +46,7 @@ And then, your data directory should look like the structure below:
     └── scannetv2-labels.combined.tsv
 ```
 
-### Training & Evaluation
+## Training & Evaluation
 After linking the raw dataset, run the provided training script (`train_scripts/train_votenet_fpt.sh`).
 The training outputs will be saved in the `outputs` directory.
 ```bash
@@ -59,7 +59,7 @@ And then, you can evaluate the model as:
 ```
 Note that you may need to modify the checkpoint directory within the script (`eval_scripts/eval_votenet_fpt.sh`).
 
-### LICENSE
+## LICENSE
 For [Torch-Points3D](https://github.com/torch-points3d/torch-points3d) repo, please check [the license](https://github.com/chrockey/FastPointTransformer-VoteNet/blob/main/LICENSE).
 
 ## Acknowledgement
