@@ -1,4 +1,4 @@
-# Fast Point Transformer (Detection)
+# Fast Point Transformer
 ### [Project Page](http://cvlab.postech.ac.kr/research/FPT/) | [Paper](https://arxiv.org/abs/2112.04702)
 This repository contains the official code of Fast Point Transformer for 3D object detection experiments below:
 #### 3D object detection with [VoteNet](https://arxiv.org/abs/1904.09664) using [Torch-Points3D](https://github.com/torch-points3d/torch-points3d)
